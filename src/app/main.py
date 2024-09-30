@@ -1,4 +1,4 @@
-from sqlmodel import Field, SQLModel, Session, create_engine
+from sqlmodel import Field, Session, SQLModel, create_engine
 
 
 class Hero(SQLModel, table=True):
@@ -9,7 +9,7 @@ class Hero(SQLModel, table=True):
 
 
 # uv add psycopg2-binary
-sqlite_url = f"postgresql://postgres:postgres@localhost/postgres"
+sqlite_url = "postgresql://postgres:postgres@localhost/postgres"
 
 engine = create_engine(sqlite_url, echo=True)
 
