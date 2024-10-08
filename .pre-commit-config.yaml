@@ -1,7 +1,7 @@
-default_stages: [commit]
+default_stages: [Nonepre-commitNone]
 repos:
   - repo: https://github.com/astral-sh/ruff-pre-commit
-    rev: v0.6.8
+    rev: v0.6.9
     hooks:
     - id: ruff
       name: Ruff check
